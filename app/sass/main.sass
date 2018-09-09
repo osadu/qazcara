@@ -1,0 +1,220 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+p
+	margin: 0
+	padding: 0
+
+
+.fa
+	color: $accent2
+	font-size: 12px
+	margin-right: 4px
+
+a,a:hover,a:active
+	color: $text
+	text-decoration: none
+
+.h1
+	font-weight: bold
+	font-style: italic
+	font-size: 25px
+	letter-spacing: 1.8px
+	margin: 0
+	padding: 0
+	text-align: center
+	margin-bottom: 15px
+
+.h3
+	font-weight: bold
+	font-size: 14px
+
+.button
+	display: inline-block
+	padding: 2px 20px
+	background-color: $accent2
+	color: $white
+	border-radius: 5px
+	box-shadow: 0 2px 0 0 #a22925;
+	transition: all 0.2s ease-in-out
+	letter-spacing: 1.4px
+	&:hover
+		background-color: #ce3732
+		color: $white
+.phone
+	letter-spacing: 1.4px
+	font-size: 15px
+	font-weight: bold
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+.menu-qazcara
+	width: 300px
+	background-color: $accent
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 0
+	min-height: 500px
+	z-index: 5
+	color: $white
+	.menu-logo
+		display: block
+		text-align: center
+		img
+			width: 180px
+			height: auto
+	ul
+		margin: 0 15px
+		li
+			border-top: 1px solid rgba($white,0.2)
+			&:last-child
+				border-bottom: 1px solid rgba($white, 0.2)
+			&.active
+				a
+					color: $accent2
+			a
+				color: $white
+				display: block
+				padding: 6px 20px 6px
+				font-weight: 200
+				letter-spacing: 1.4px
+				transition: all 0.2s ease-in-out
+				&:hover
+					color: $accent2
+	.menu-contacts
+		position: absolute
+		bottom: 30px
+		left: 30px
+		.button
+			margin-top: 15px
+
+header
+	position: relative
+	.top-header
+		position: absolute
+		top: 15px
+		left: 0
+		width: 100%
+		z-index: 2
+		background-color: transparent
+		.logo
+			display: inline-block
+			img
+				max-width: 100px
+		.top-header-contacts
+			text-align: right
+			padding-top: 5px
+			.button
+				margin-top: 5px
+	.slider-item
+		height: 100vh
+		min-height: 500px
+		background-position: top center
+		background-size: cover
+
+section
+	padding: 20px 0
+	.ui-widget-header
+		background-color: transparent
+		border: none
+		text-align: center
+	.ui-tabs .ui-tabs-nav li
+		border: none
+		background-color: transparent
+		display: inline-block
+		float: none
+		margin: 0
+		padding: 0
+	.ui-widget.ui-widget-content
+		border: none
+	.ui-widget-content
+		border: none
+	.ui-tabs .ui-tabs-nav .ui-tabs-anchor
+		float: none
+		display: inline-block
+		font-family: 'roboto-example'
+		letter-spacing: 1.4px
+		font-size: 13px
+		color: $text
+		border-bottom: 2px solid transparent
+		transition: all 0.2s ease-in-out
+		&:hover
+			color: $text
+			border-bottom: 2px solid #393a4e
+	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited, .ui-state-active a:hover
+		color: $text
+		border-bottom: 2px solid #393a4e !important
+	.ui-tabs .ui-tabs-panel
+		margin-top: 20px
+
+.products-items
+	margin-top: 20px
+	&:first-child
+		margin-top: 0
+	.product-item
+		border: 2px solid #b1b6cc
+		padding: 20px
+		transition: all 0.2s ease-in-out
+		display: block
+		&:hover
+			background-color: rgba(#b1b6cc,0.6)
+		.product-header
+			text-align: center
+			border-bottom: 2px solid rgba($accent2,0.5)
+			margin-bottom: 15px
+			height: 170px
+			img
+				width: 200px
+				height: auto
+				margin-bottom: 5px
+			.h3
+				line-height: 1.4
+		.product-body
+			p.characteristic
+				font-family: 'geometria-extra-light', sans-serif
+				color: $text
+				margin: 5px 0
+				font-size: 13px
+
+@import "media" // Always at the end
