@@ -39,6 +39,10 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jqueryui/jquery-ui.min.js',
 		'app/libs/owl-carousel/owl.carousel.min.js',
+		'app/libs/lightgallery/lightgallery.min.js',
+		'app/libs/lightgallery/lg-fullscreen.min.js',
+		'app/libs/lightgallery/lg-thumbnail.min.js',
+		'app/libs/lightgallery/lg-video.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

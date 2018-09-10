@@ -60,7 +60,11 @@ a,a:hover,a:active
 	margin: 0
 	padding: 0
 	text-align: center
-	margin-bottom: 15px
+	margin-bottom: 20px
+	text-transform: uppercase
+.h2
+	font-size: 18px
+	letter-spacing: 1.4px
 
 .h3
 	font-weight: bold
@@ -68,13 +72,17 @@ a,a:hover,a:active
 
 .button
 	display: inline-block
-	padding: 2px 20px
+	padding: 5px 20px
 	background-color: $accent2
 	color: $white
 	border-radius: 5px
 	box-shadow: 0 2px 0 0 #a22925;
 	transition: all 0.2s ease-in-out
 	letter-spacing: 1.4px
+	text-align: center
+	&-wrap
+		text-align: center
+		margin-top: 20px
 	&:hover
 		background-color: #ce3732
 		color: $white
@@ -153,8 +161,39 @@ header
 		background-position: top center
 		background-size: cover
 
+
+.form
+	border: 2px solid #b1b6cc
+	margin: 0
+	padding: 30px
+	.form-title
+		font-size: 20px
+		font-weight: bold
+		text-transform: uppercase
+		color: $text
+		margin: 0
+	.field
+		p
+			font-weight: bold
+			margin-top: 15px
+		input
+			width: 100%
+			border: 2px solid #b1b6cc
+			background-color: #dad9d7
+			padding: 8px 10px
+	.button
+		padding-top: 8px
+		padding-bottom: 8px
+		font-size: 18px
+		width: 100%
+		margin-top: 20px
+        
+
 section
-	padding: 20px 0
+	padding: 40px 0
+	position: relative
+	background-position: top center
+	background-size: cover
 	.ui-widget-header
 		background-color: transparent
 		border: none
@@ -216,5 +255,129 @@ section
 				color: $text
 				margin: 5px 0
 				font-size: 13px
+
+section.reasons5
+	background: url(../img/service-utp-bg.jpg)
+	color: $white
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba($accent, 0.85)
+	.reasons-desc
+		text-align: center
+		.reason-item
+			width: 190px
+			display: inline-block
+			vertical-align: top
+			margin: 0 15px
+			p
+				&.digit
+					font-weight: 200
+					color: $accent2
+					font-size: 60px
+				&.text
+					text-align: left
+					font-weight: 200
+
+section.arenda
+	color: #5b5959
+	.h1
+		color: $text
+	.arenda-body
+		letter-spacing: 1.4px
+		.h2
+			margin: 40px 0 20px
+.features
+	p
+		margin-top: 10px
+		padding-left: 20px
+		position: relative
+		&::before
+			content: ''
+			font-family: 'FontAwesome'
+			position: absolute
+			left: -1px;
+			color: $accent2
+
+
+
+section.aboutcompany
+	background: url(../img/about-bg.jpg) 
+	color: $white
+	padding-bottom: 0
+	letter-spacing: 1.4px
+	background-position: center center
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba($accent, 0.5)
+	.features
+		margin-top: 30px
+	.seconddescription
+		background-color: $accent
+		padding: 30px 0 40px
+		margin-top: 40px
+		.pluschina
+			margin: 20px 0
+			.plus
+				margin-top: 8px
+				span
+					color: $accent2
+					margin-right: 3px
+					font-size: 16px
+
+section.videogallery
+	span
+		display: none
+	img
+		width: 100%
+		height: auto
+		margin-top: 20px
+
+section.maps
+	padding: 0
+	.contactsmap
+		max-width: 25%
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: $accent
+		color: $white
+		padding: 20px 30px
+		.form
+			background-color: $white
+			.field
+				p
+					color: #5b5959
+		.contacts
+			margin-bottom: 30px
+
+.contacts
+	p
+		font-weight: bold
+		margin-top: 10px
+		.fa
+			margin-right: 8px
+
+footer
+	padding: 20px 0
+	background-color: #d0d3e0
+	.logo
+		img
+			width: 150px
+			height: auto
+	.contacts
+		margin-left: 40px
+		.fa
+			color: $text
 
 @import "media" // Always at the end

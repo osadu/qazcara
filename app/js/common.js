@@ -7,8 +7,11 @@ $(function() {
      	autoplay: true,
      	//autoplayHoverPause: true,
      });
-    });
 
-    $( "#tabs" ).tabs();
+     $( "#tabs" ).tabs();
+    
+     $('#video-gallery').lightGallery(); 
+
+    });
 
 });

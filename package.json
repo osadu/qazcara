@@ -20,5 +20,13 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osadu/qazcara.git"
+  },
+  "bugs": {
+    "url": "https://github.com/osadu/qazcara/issues"
+  },
+  "homepage": "https://github.com/osadu/qazcara#readme"
 }
