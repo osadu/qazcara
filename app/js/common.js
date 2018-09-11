@@ -1,10 +1,16 @@
 $(function() {
 
 	$(document).ready(function(){
-     $(".owl-carousel").owlCarousel({
+     $(".header-slider").owlCarousel({
      	items: 1,
      	loop: true,
      	autoplay: true,
+     	//autoplayHoverPause: true,
+     });
+
+     $(".descr-slider").owlCarousel({
+     	items: 1,
+     	loop: true,
      	//autoplayHoverPause: true,
      });
 
@@ -32,6 +38,12 @@ $(function() {
 
        //$(".product-item").equalHeights();
        $(".product-header").equalHeights();
+
+
+       $('.product-item').magnificPopup({
+		  type:'inline',
+		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
     });
 
 });
