@@ -5,15 +5,93 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	body
+		font-size: 12px
+	.products-items
+		.product-item
+			.product-body
+				p.characteristic
+					font-size: 11px
+			.product-header
+				height: 150px
+				img
+					width: 150px
 
+	.menu-qazcara
+		width: 210px
+		ul>li>a
+			font-size: 12px
+	.menu-contacts
+		p
+			font-size: 13px
+
+	.form
+		.form-title
+			font-size: 13px
+
+	.contactsmap
+		max-width: 40% !important
+
+	footer
+		.contacts
+			p
+				margin-left: 20px
 // ≥992px
 +media-breakpoint-down(md)
+	.menu-qazcara
+		width: 200px
+		left: -200px
+		transition: all 0.3s ease-in-out
+
+	.top-header-contacts
+		margin-right: 30px
+
+	section .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+		font-size: 12px
+	.top-header
+		.logo
+			margin-left: 50px
+
+	.form
+		.form-title
+			font-size: 15px
+
+
+	.arenda
+		.form
+			margin-top: 50px
 
 // ≥768px
 +media-breakpoint-down(sm)
+	body
+		font-size: 10px
+	section .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+		font-size: 11px
+
+	.h1
+		font-size: 20px
+
+	.h2
+		font-size: 15px
+
+	.contactsmap
+		position: static !important
+		max-width: 100% !important
+    
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.reason-item
+		margin-top: 20px !important
+		&:first-child
+			margin-top: 0
+	section .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+		font-size: 10px
+	footer
+		.contacts
+			p
+				font-size: 11px !important
+				margin-left: 20px
 
 
 /*==========  Mobile First  ==========*/

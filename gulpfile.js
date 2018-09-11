@@ -43,6 +43,7 @@ gulp.task('js', function() {
 		'app/libs/lightgallery/lg-fullscreen.min.js',
 		'app/libs/lightgallery/lg-thumbnail.min.js',
 		'app/libs/lightgallery/lg-video.min.js',
+		'app/libs/equalheight/jquery.equalheights.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -87,6 +87,7 @@ a,a:hover,a:active
 		background-color: #ce3732
 		color: $white
 .phone
+	display: block
 	letter-spacing: 1.4px
 	font-size: 15px
 	font-weight: bold
@@ -96,8 +97,21 @@ ul
 	margin: 0
 	padding: 0
 
+.menu-btn
+	position: fixed
+	z-index: 10
+	left: 20px
+	top: 20px
+	transition: all 0.3s ease-in-out
+
+.open-btn-menu
+	left: 190px
+	top: 10px
+.open-menu
+	left: 0 !important
+
 .menu-qazcara
-	width: 300px
+	width: 280px
 	background-color: $accent
 	height: 100vh
 	position: fixed
@@ -136,6 +150,8 @@ ul
 		left: 30px
 		.button
 			margin-top: 15px
+		.phone
+			color: $white
 
 header
 	position: relative
@@ -167,7 +183,7 @@ header
 	margin: 0
 	padding: 30px
 	.form-title
-		font-size: 20px
+		font-size: 17px
 		font-weight: bold
 		text-transform: uppercase
 		color: $text
@@ -227,8 +243,11 @@ section
 	.ui-tabs .ui-tabs-panel
 		margin-top: 20px
 
+.wihoutborder
+	border: none !important
+	height: auto !important
+
 .products-items
-	margin-top: 20px
 	&:first-child
 		margin-top: 0
 	.product-item
@@ -236,13 +255,13 @@ section
 		padding: 20px
 		transition: all 0.2s ease-in-out
 		display: block
+		margin-top: 20px
 		&:hover
 			background-color: rgba(#b1b6cc,0.6)
 		.product-header
 			text-align: center
 			border-bottom: 2px solid rgba($accent2,0.5)
 			margin-bottom: 15px
-			height: 170px
 			img
 				width: 200px
 				height: auto
@@ -345,7 +364,7 @@ section.videogallery
 section.maps
 	padding: 0
 	.contactsmap
-		max-width: 25%
+		max-width: 28%
 		position: absolute
 		right: 0
 		top: 0
@@ -373,10 +392,10 @@ footer
 	background-color: #d0d3e0
 	.logo
 		img
-			width: 150px
+			max-width: 150px
 			height: auto
 	.contacts
-		margin-left: 40px
+		margin-left: 60px
 		.fa
 			color: $text
 
