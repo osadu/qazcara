@@ -9,6 +9,11 @@
 	background-color: $accent
 	color: #fff
 
+
+button
+	&:focus
+		outline: none	
+
 body
 	font-size: 14px
 	min-width: 320px
@@ -80,6 +85,8 @@ a,a:hover,a:active
 	transition: all 0.2s ease-in-out
 	letter-spacing: 1.4px
 	text-align: center
+	outline: none
+	border-color: transparent
 	&-wrap
 		text-align: center
 		margin-top: 20px
@@ -275,6 +282,8 @@ section
 				margin: 5px 0
 				font-size: 13px
 
+
+
 section.reasons5
 	background: url(../img/service-utp-bg.jpg)
 	color: $white
@@ -401,6 +410,18 @@ footer
 
 //modals
 
+
+.white-popup
+	.h1
+		font-style: normal !important
+		letter-spacing: 1px
+		font-weight: bold
+		text-align: left
+		span
+			text-transform: lowercase
+	.form
+		margin-top: 20px
+
 .white-popup 
  	position: relative
  	background: #FFF
@@ -411,8 +432,98 @@ footer
  	.slider-item
  		text-align: center
  		img
- 			width: 300px
+ 			display: inline-block
+ 			max-width: 300px
  			height: auto
+
+.owl-carousel
+	position: relative
+	.owl-dots
+		text-align: center
+	.owl-nav
+		position: absolute
+		top: 40%
+		left: 0
+		width: 100%
+		button
+			.fa
+				font-size: 30px
+			position: absolute
+			&.owl-prev
+				left: -10px
+			&.owl-next
+				right: -10px
+ 
+.owl-carousel button.owl-dot
+ 	width: 15px
+ 	height: 15px
+ 	border-radius: 50%
+ 	margin-left: 4px
+ 	background-color: $accent
+ 	display: inline-block
+ 	&.active
+ 		background-color: $accent2
+
+
+//accordion
+.accordion-1
+	padding: 20px 0
+
+.accordion 
+    background-color: #eee
+    color: #444
+    cursor: pointer
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 20px
+    transition: 0.4s
+    line-height: 0.5
+
+
+.accordion
+	.active, .accordion:hover 
+    	background-color: #ccc
+
+
+.accordion:before 
+    content: '\002B'
+    color: #777
+    font-weight: bold
+    float: left
+    margin-right: 15px
+    font-size: 30px
+    position: relative
+    top: -3px
+    color: $accent2
+
+
+.accordion
+	&.active:before 
+    	content: "\2212"
+
+
+.panel 
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    margin-top: 10px
+    margin-bottom: 20px
+    margin-left: 40px
+    p
+    	font-weight: normal
+
+p.characteristic
+	font-family: 'geometria-extra-light', sans-serif
+	font-weight: bold
+	color: $text
+	margin: 5px 0
+	font-size: 13px
+p.title-characteristics
+	font-weight: bold
+	margin: 15px 0 10px
 
 
 @import "media" // Always at the end

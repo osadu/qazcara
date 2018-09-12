@@ -5,13 +5,16 @@ $(function() {
      	items: 1,
      	loop: true,
      	autoplay: true,
+        dots: false,
      	//autoplayHoverPause: true,
      });
 
      $(".descr-slider").owlCarousel({
      	items: 1,
      	loop: true,
-     	//autoplayHoverPause: true,
+        nav: true,
+        dots: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
      });
 
      $( "#tabs" ).tabs();
@@ -44,6 +47,24 @@ $(function() {
 		  type:'inline',
 		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 		});
+
+
+       var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+
+
     });
 
 });
