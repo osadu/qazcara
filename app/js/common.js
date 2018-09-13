@@ -51,6 +51,16 @@ $(function() {
 
        var acc = document.getElementsByClassName("accordion");
         var i;
+       var accordion = document.getElementsByClassName("accordion-1"); 
+       var j;
+
+       for(j =0 ; j < accordion.length ; j++){
+       	  var buts = accordion[j].getElementsByClassName("accordion");
+       	  var but = buts[0];
+       	  but.classList.toggle("active");
+       	  var p = but.nextElementSibling;
+       	  p.style.maxHeight = "500px";
+       } 
 
         for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() {
